@@ -1,0 +1,69 @@
+table {
+    border-collapse: collapse;
+ }
+
+th, td {
+    border: 1px solid black;
+    text-align: center;
+}
+th img {
+    vertical-align: middle; /* Align the image with the text */
+    height: 30px; /* Set the height of the image */
+    left: 10px; /* Distance from the left edge */
+    top: 50%; /* Start vertically centering */
+    transform: translateY(25%); /* Fine-tune centering */
+    height: 40px; /* Set the height of the image */
+}
+
+td:nth-child(1) {
+    width: 5cm; /* Setting the width to 5 cm */
+    height: 10cm; /* Setting the height to 10 cm */
+    cursor: pointer;
+}
+
+td:nth-child(2) {
+    width: 16cm; /* Setting the width to 10 cm */
+    height: 15cm; /* Setting the height to 10 cm */
+    cursor: pointer;
+}
+
+td:nth-child(3) {
+    width: 5cm; /* Setting the width to 5 cm */
+    height: 10cm; /* Setting the height to 10 cm */
+}
+
+th {
+    background-color: black;
+    height: 2cm;
+ }
+
+ body {
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    background-color: #f0f0f0; /* Optional background color for contrast */
+}
+
+ .selected {
+    cursor: pointer;
+    padding: 6px;
+    margin-right: 5px;
+    background-color: rgb(211, 211, 211);
+    border-radius: 5px;
+}
+
+.selected:hover {
+    background-color: rgb(197, 176, 12);
+}
+
+.active {
+    background-color: rgb(197, 176, 12);
+    color: white;
+}
+
+#map {
+    margin-top: 20px;
+    border: 2px solid #ddd;
+}
